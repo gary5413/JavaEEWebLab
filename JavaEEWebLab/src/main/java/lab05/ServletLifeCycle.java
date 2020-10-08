@@ -54,7 +54,7 @@ public class ServletLifeCycle extends HttpServlet {
 		writer.println("<h1>本程式沒有前端回應，此頁面由程式動態生成並觀察IDE Console</h1>");
 		writer.println("<p>使用response.getWriter</p>");
 		writer.println("<hr>");
-		writer.println("<a href='../index.jsp'>回首頁</a>");
+		writer.println("<a href='/JavaEEWebLab/index.jsp'>回首頁</a>");
 		System.out.println("Servlet Life Cycle service()");
 	}
 
