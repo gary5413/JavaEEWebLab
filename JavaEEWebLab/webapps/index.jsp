@@ -14,19 +14,11 @@ body {
 </style>
 </head>
 <body>
+<jsp:include page="/navbar_jspinclude.jsp" />
 
-<h1>JavaEE Servlet JSP</h1>
-<p>A website created by Gary.</p>
-
-<div class="navbar">
-  <a href="/JavaEEWebLab/ServletLifeCycle">Servlet Life Cycle</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#" class="right">Link</a>
-</div>
 <div class="row">
-  <div class="side">...</div>
-  <div class="main">...</div>
+  <div class="side"></div>
+  <div class="main"></div>
 </div>
 
 </body>
