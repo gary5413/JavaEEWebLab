@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Selector</title>
+    <script src="/jQueryLab_v1/jquery-3.5.1.js"></script>
+    <link rel='stylesheet' href="/jQueryLab_v1/jqueryCss.css">
+    <style>
+          body{
+            font-size: 17px;
+            font-family: Arial;
+            line-height: 1.5em;
+        }
+        .form1{
+            border:2px solid black;
+            width: 400px;
+            height: 300px;
+            margin: auto;
+            /* text-align: center; */
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>jQuery</h1>
+    </header>
+    <div class="container">
+        <form class="form1" action="#" method="GET" id='form1'>
+          <h3>Form One</h3>
+            <label>Name</label>
+            <input type='text' id="name">    
+            <br>        
+            <label>Email</label>
+            <input type="email" id='email'>
+            <br>
+            <label>Gender</label>
+            <input type="radio" id='gender' disabled>Male
+            <input type="radio" id='gender' checked>Female
+            <br>
+            <label>Habit</label>
+            <input type="checkbox" id='habit' disabled><span>Movie</span>
+            <input type="checkbox" id='habit' checked><span>Game</span>
+            <br>
+            <label>City</label>            
+            <select>
+                <option value="Taipei">Taipei</option>
+                <option value="Taoyuan" selected>Taoyuan</option>
+                <option value="Hsinchu">Hsinchu</option>
+                <option value="Miaoli">Miaoli</option>
+                <option value="Nantou">Nantou</option>
+                <option value="Kaohsiung">Kaohsiung</option>
+            </select>
+            <br>
+            <textarea></textarea>
+            <br>
+            <button  disabled id='btn'>setting</button>
+            <input type="button" value="Button">
+            <br>  
+            <input type="submit" value="Subimt">
+        </form>
+        <script>
+            $(function(){
+                // $(':button').css('background','yellow')
+                // $(':input').css('background-color','orange')
+                // $(':text').css('background','red')
+                // $(':checkbox + span').css('background','lightblue')
+                // $(':button').css('background','green')
+                $(':disabled').css('background','pink')
+                // $(':radio').css('background','yellow')
+                // $('#btn').css('background','purple')
+
+                $(':button') //type=button or button
+                $(':checkbox')
+                $(':selected').css('background','pink')
+                $(':checked').css('background','black')
+                $(':enabled')
+                $(':file')
+                $(':image')
+                $(':input') //表單元素中(textarea,select,button)
+                $(':password')
+                $(':radio')
+                $(':reset')
+                $(':submit')
+                $(':text')
+
+
+
+
+            })
+        </script>
+    </div>
+</body>
+</html>

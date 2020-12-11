@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Lab01</title>
+    <style>
+       /* body{
+            font-size: 17px;
+            font-family: Arial;
+            background-color: #f4f4ff;
+            line-height: 1.5em;
+        } */
+        header{
+            background: #333;
+            color:#fff;
+            padding:20px;
+            text-align: center;
+            /* border-bottom: 4px rgb(13, 107, 44) solid; */
+            margin-bottom: 10px;
+        }
+        #container{
+            width: 90%;
+            margin:auto;
+            padding:10px;
+        }
+    </style>
+    <!-- 
+        1.先示範 google console $單個 $$全部 $_上一個
+        2.匯入jQuery函式庫後 
+    -->
+    <script>
+        // $(function(){
+            
+        // })
+        // $('h3').css('color')
+        // console.log()
+        </script>
+</head>
+<body>
+    <header>
+        <h1>jQuery</h1>
+    </header>
+    <div class="container">
+        <h3 class="myh3">Hello!!!</h3>
+        <h3 class="myh3"id="myh3">Hello!!!</h3>
+        <h3 class="myh3">Hello!!!</h3>
+        <hr>
+        <h3 class="jqh3">jQuery</h3>
+        <h3 class="jqh3">jQuery</h3>
+        <h3 class="jqh3">jQuery</h3>
+    </div>
+    <script src="../jquery-3.5.1.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <script>
+        let iii='gary';
+        $(function(){
+            let eeit126=205;
+        // $('h3').css('color','red')
+        // console.log($('h3').css('color'))
+        // $('#myh3').css('color','green')
+        // $('.myh3').css('color','lightblue') .addEventListener('mouseenter',changeH3);
+
+         
+        let h3all=document.querySelectorAll('.myh3');
+        console.log(h3all)
+        let h3allLen=h3all.length;
+        console.log(h3allLen)
+        for(let i=0;i<h3allLen;i++){
+            h3all[i].addEventListener('mouseenter',function(){     
+            h3all[i].style.color='red'
+            })
+            h3all[i].addEventListener('mouseleave',function(){    
+            h3all[i].style.color='black'
+            })
+        }
+   
+        
+        
+        // jQuery chaining鍊式
+        $('h3.jqh3').on('mouseenter',function(){
+            console.log('mouse enter')
+            $(this).css('color','lightblue')
+        }).on('mouseleave',function(){
+            $('h3').css('color','black')
+
+        })
+
+
+        })
+   </script>
+</body>
+</html>
